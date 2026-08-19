@@ -18,7 +18,7 @@ repository. Supported systems are `x86_64-linux` and `aarch64-linux`.
 ## Run without installing
 
 ```sh
-nix run github:alioguzhan/chatgpt-desktop
+nix run github:alioguzhan/chatgpt-desktop-flake
 ```
 
 From a local checkout:
@@ -33,7 +33,7 @@ Add the repository to the `inputs` section of your `flake.nix`:
 
 ```nix
 inputs.chatgpt-desktop = {
-  url = "github:alioguzhan/chatgpt-desktop";
+  url = "github:alioguzhan/chatgpt-desktop-flake";
   inputs.nixpkgs.follows = "nixpkgs";
 };
 ```
