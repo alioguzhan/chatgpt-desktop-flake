@@ -19,7 +19,7 @@ writeShellApplication {
       trap 'rm -rf -- "$stagingPath"' EXIT
 
       ln -s \
-        "$CHATGPT_RESOURCES_SOURCE/"{codex,codex-code-mode-host,cua_node,native,rg} \
+        "$CHATGPT_RESOURCES_SOURCE/"{codex,codex-code-mode-host,cua_node,native,rg,tectonic} \
         "$stagingPath"
       cp -R "$CHATGPT_RESOURCES_SOURCE/plugins" "$stagingPath/plugins"
       chmod -R u+w "$stagingPath/plugins"

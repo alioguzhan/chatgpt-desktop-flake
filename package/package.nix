@@ -130,7 +130,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
       \( -path '*/prebuilds/*musl*' -o -path '*/prebuilds/android-*' \) \
       -delete
 
-    ln -sf ${lib.getExe tectonic-unwrapped} "$out/lib/chatgpt/resources/plugins/openai-bundled/plugins/latex/bin/tectonic"
+    ln -sf ${lib.getExe tectonic-unwrapped} "$out/lib/chatgpt/resources/tectonic/tectonic"
     ln -sf ${lib.getExe ripgrep} "$out/lib/chatgpt/resources/rg"
     ln -sf ${lib.getExe nodejs-slim} "$out/lib/chatgpt/resources/cua_node/bin/node"
 
